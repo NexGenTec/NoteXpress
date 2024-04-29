@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "notexpress-52fb2": {
+      "hosting": {
+        "app": [
+          "notexpress-52fb2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "notexpress-52fb2"
+  }
+}
