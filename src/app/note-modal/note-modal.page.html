@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-title class="ion-text-center" style="font-size: 34px;">Notas</ion-title>
+    <!-- Icono para acciones adicionales -->
+    <ion-icon name="ellipsis-vertical-outline" size="large" slot="end"></ion-icon>
+  </ion-toolbar>
+
+  <ion-item class="rounded-item" lines="none">
+    <ion-label class="rounded-label" position="stacked">Nombre</ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  
+  <ion-item class="rounded-item" lines="none">
+    <ion-label class="rounded-label" position="stacked">Comentario</ion-label>
+    <ion-textarea
+    [(ngModel)]="comentario"
+    placeholder="Type something here"
+    [autoGrow]="true"
+    [counter]="true" maxlength="200">
+    </ion-textarea>
+  </ion-item>
+  
+  <ion-item class="icon-row" lines="none">
+    <ion-icon name="camera" slot="start"></ion-icon>
+    <ion-icon name="create" slot="start"></ion-icon>
+    <ion-icon name="ellipsis-horizontal-outline" slot="start"></ion-icon>
+  </ion-item>
+  
+
+  <div class="button-container">
+    <ion-button shape="round" size="default" (click)="guardarNota()">Añadir</ion-button>
+  </div>
+  
+</ion-content>

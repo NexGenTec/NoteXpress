@@ -3,6 +3,7 @@ export const environment = {
   firebase: {
     apiKey: "AIzaSyA8Y2bIY76NJqQnMGfIIxKj9Br1NYadRG0",
     authDomain: "notexpress-52fb2.firebaseapp.com",
+    databaseURL: "https://notexpress-52fb2-default-rtdb.firebaseio.com",
     projectId: "notexpress-52fb2",
     storageBucket: "notexpress-52fb2.appspot.com",
     messagingSenderId: "1008950810758",

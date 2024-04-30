@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'note-modal',
+    loadChildren: () => import('./note-modal/note-modal.module').then( m => m.NoteModalPageModule)
+  },
 ];
 
 @NgModule({
